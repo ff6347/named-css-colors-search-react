@@ -40,7 +40,7 @@ const ColorList = () => {
       }}>
         {filteredColors.map(color => (
           <figure key={color.title}
-            onClick={() => copyToClipboard(color.title)}
+            onClick={() => copyToClipboard(color.arg)}
             style={{ margin: 0, textAlign: 'center', width: '100%' }}>
             <div
               style={{
