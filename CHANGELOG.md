@@ -1,3 +1,16 @@
+# [1.1.0](https://github.com/ff6347/named-css-colors-search-react/compare/v1.0.1...v1.1.0) (2024-09-28)
+
+
+### Bug Fixes
+
+* Color conversion from hey to rgb ([1a10b16](https://github.com/ff6347/named-css-colors-search-react/commit/1a10b1613334a38ce895b99da54b2c7e7351f9f0))
+
+
+### Features
+
+* Add copy icon ([3b0da89](https://github.com/ff6347/named-css-colors-search-react/commit/3b0da89ffd867334761294ca58f4d732cf06913f))
+* Add copy icon ([d9b58a7](https://github.com/ff6347/named-css-colors-search-react/commit/d9b58a709eabc70dc05dd15269051626d0b2f467))
+
 ## [1.0.1](https://github.com/ff6347/named-css-colors-search-react/compare/v1.0.0...v1.0.1) (2024-09-28)
 
 
