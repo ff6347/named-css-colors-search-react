@@ -1,5 +1,5 @@
 import { useState, useMemo } from 'react';
-import { colors } from './colors';
+import { colors } from '@ff6347/named-css-colors';
 import { LucideCopy } from './Icon';
 
 const ColorList = () => {
@@ -7,9 +7,8 @@ const ColorList = () => {
   const [filter, setFilter] = useState('');
 
   const filteredColors = useMemo(() => {
-    return colors().items.filter(color =>
-      color.title.toLowerCase().includes(filter.toLowerCase()) ||
-      color.arg.toLowerCase().includes(filter.toLowerCase())
+    return colors.items.filter(color =>
+      color.name.toLowerCase().includes(filter.toLowerCase())
     );
   }, [filter]);
 
@@ -74,11 +73,11 @@ const ColorList = () => {
                 <div id="color-item" style={{
                   width: '100%',
                   paddingBottom: '100%',
-                  backgroundColor: color.arg,
+                  backgroundColor: color.name,
                   position: 'relative',
                 }}>
                   <button
-                    onClick={() => copyToClipboard(color.arg)}
+                    onClick={() => copyToClipboard(color.name)}
                     style={{
                       position: 'absolute',
                       top: '5px',
@@ -101,7 +100,7 @@ const ColorList = () => {
                   padding: '5px',
                   backgroundColor: 'hsla(0, 0%, 100%, 0.8)',
                   color: 'hsl(0, 0%, 20%)',
-                }}>{color.arg}</figcaption>
+                }}>{color.name}</figcaption>
               </figure>
             );
           })}
