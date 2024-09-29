@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/ff6347/named-css-colors-search-react/compare/v1.1.0...v1.1.1) (2024-09-29)
+
+
+### Bug Fixes
+
+* Remove copy pasta color code ([cf5d89b](https://github.com/ff6347/named-css-colors-search-react/commit/cf5d89b6d66209c3b4e91e16189320896887b4ea))
+
 # [1.1.0](https://github.com/ff6347/named-css-colors-search-react/compare/v1.0.1...v1.1.0) (2024-09-28)
 
 
