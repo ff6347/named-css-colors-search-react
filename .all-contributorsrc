@@ -1,0 +1,15 @@
+{
+  "projectName": "named-css-colors-search-react",
+  "projectOwner": "ff6347",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 128,
+  "commit": true,
+  "commitConvention": "angular",
+  "contributors": [],
+  "contributorsPerLine": 7,
+  "linkToUsage": true
+}
