@@ -93,7 +93,11 @@ h6 {
 	padding: 1.33em 0 1em 0;
 }
 
-
+footer {
+  padding: 20px;
+  text-align: center;
+  font-size: 0.8em;
+}
 
 
 
