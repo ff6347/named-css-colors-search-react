@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/ff6347/named-css-colors-search-react/compare/v1.2.0...v1.2.1) (2024-10-02)
+
+
+### Bug Fixes
+
+* Link in footer ([ef59dd8](https://github.com/ff6347/named-css-colors-search-react/commit/ef59dd8b11252b342531da27761983c82d210ffd))
+
 # [1.2.0](https://github.com/ff6347/named-css-colors-search-react/compare/v1.1.1...v1.2.0) (2024-10-02)
 
 
