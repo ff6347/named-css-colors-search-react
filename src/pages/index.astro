@@ -1,11 +1,11 @@
 ---
-import Layout from '../layouts/Default.astro';
-import ColorList from '../components/ColorList';
+import Layout from "../layouts/Default.astro";
+import ColorList from "../components/ColorList";
 ---
 
 <Layout>
 	<div class="App">
 		<h1>Named CSS Colors Search</h1>
-		<ColorList />
+		<ColorList client:only="react" />
 	</div>
 </Layout>
