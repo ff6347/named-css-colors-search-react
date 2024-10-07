@@ -26,13 +26,13 @@ const ColorCard = ({
 
 	const copyButtonStyle: CSSProperties = {
 		position: "absolute",
+		padding: "5px",
 		top: "5px",
 		right: "5px",
 		background: buttonBgColor,
 		border: "none",
 		borderRadius: "5px",
-		width: "30px",
-		height: "30px",
+
 		display: "flex",
 		alignItems: "center",
 		justifyContent: "center",
@@ -43,6 +43,7 @@ const ColorCard = ({
 		top: "5px",
 		left: "5px",
 	};
+	delete favoriteButtonStyle.right;
 
 	return (
 		<figure
