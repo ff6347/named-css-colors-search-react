@@ -1,0 +1,32 @@
+---
+import { colors } from "@ff6347/named-css-colors";
+
+const color = Astro.params.color;
+if (!color) {
+	return Astro.rewrite("/404");
+}
+const selectedColor = colors.hashmap[color];
+if (!selectedColor) {
+	return Astro.rewrite("/404");
+}
+
+const colorname = color;
+console.log({ colorname });
+---
+
+<style define:vars={{ colorname: colorname }}>
+	html,
+	body {
+		padding: 0;
+		margin: 0;
+		height: 100vh;
+	}
+	.color-box {
+		background-color: var(--colorname);
+		width: 100vw;
+		height: 100%;
+	}
+</style>
+<div class="color-box">
+	<h1>{colorname}</h1>
+</div>

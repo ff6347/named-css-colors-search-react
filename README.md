@@ -1,9 +1,34 @@
 # Named CSS Colors Search React
+
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+
 [![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
-React app built with Vite to search named CSS colors. Used in my seminar fundamentals of digital communicaiton at university of arts Braunschweig.
+React app built with Astro to search named CSS colors. Used in my seminar fundamentals of digital communicaiton at university of arts Braunschweig.
+
+## Features
+
+- [x] Search for named CSS colors
+- [x] Copy color to clipboard
+- [x] API: Get a random named CSS color
+- [x] API: Get a random named CSS color of a given size
+- [x] API: Get a named CSS color of a given size and color
+- [ ] Save favorite colors to local storage
+- [ ] Get color overview for named CSS colors
+
+## API
+
+API is build with hono. Following endpoints are available:
+
+- GET `/api/`
+- GET `/api/[size]`
+- GET `/api/size/[color]`
+- GET `/api/[width]/[height]/[color]`
+
+Returns a SVG image with the given width, height (if not given, width is used) and color (if not given, a random color is used).
+
 
 ## Installation
 

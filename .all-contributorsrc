@@ -1,27 +1,21 @@
 {
-  "projectName": "named-css-colors-search-react",
-  "projectOwner": "ff6347",
-  "repoType": "github",
-  "repoHost": "https://github.com",
-  "files": [
-    "README.md"
-  ],
-  "imageSize": 128,
-  "commit": true,
-  "commitConvention": "angular",
-  "contributors": [
-    {
-      "login": "ff6347",
-      "name": "Fabian Morón Zirfas",
-      "avatar_url": "https://avatars.githubusercontent.com/u/315106?v=4",
-      "profile": "https://fabianmoronzirfas.me/",
-      "contributions": [
-        "code",
-        "infra",
-        "design"
-      ]
-    }
-  ],
-  "contributorsPerLine": 7,
-  "linkToUsage": true
+	"projectName": "named-css-colors-search-react",
+	"projectOwner": "ff6347",
+	"repoType": "github",
+	"repoHost": "https://github.com",
+	"files": ["README.md"],
+	"imageSize": 128,
+	"commit": true,
+	"commitConvention": "angular",
+	"contributors": [
+		{
+			"login": "ff6347",
+			"name": "Fabian Morón Zirfas",
+			"avatar_url": "https://avatars.githubusercontent.com/u/315106?v=4",
+			"profile": "https://fabianmoronzirfas.me/",
+			"contributions": ["code", "infra", "design"]
+		}
+	],
+	"contributorsPerLine": 7,
+	"linkToUsage": true
 }
