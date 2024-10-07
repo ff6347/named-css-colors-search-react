@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/ff6347/named-css-colors-search-react/compare/v1.2.1...v1.3.0) (2024-10-07)
+
+
+### Features
+
+* Move page to astro add api ([6f494f9](https://github.com/ff6347/named-css-colors-search-react/commit/6f494f964504b3a5bcb4252a4f5d10ec520cae05))
+
 ## [1.2.1](https://github.com/ff6347/named-css-colors-search-react/compare/v1.2.0...v1.2.1) (2024-10-02)
 
 ### Bug Fixes
