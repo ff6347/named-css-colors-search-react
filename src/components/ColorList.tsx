@@ -1,4 +1,5 @@
-import { useState, useMemo, type CSSProperties } from "react";
+import "../css/color-list.css";
+import { useState, useMemo } from "react";
 import { colors } from "@ff6347/named-css-colors";
 import type { ColorItem } from "@ff6347/named-css-colors";
 import { LucideCopy } from "./IconCopy";
@@ -19,98 +20,43 @@ const ColorCard = ({
 }) => {
 	const [h, s, l] = color.hsl;
 	const isDark = l < 50;
-	const iconColor = isDark ? `hsl(0, 0%, 70%)` : `hsl(0, 0%, 30%)`;
 	const buttonBgColor = isDark
 		? `hsla(${h}, ${s}%, ${l + 10}%, 0.3)`
 		: `hsla(${h}, ${s}%, ${l - 10}%, 0.3)`;
 
-	const copyButtonStyle: CSSProperties = {
-		position: "absolute",
-		padding: "5px",
-		top: "5px",
-		right: "5px",
-		background: buttonBgColor,
-		border: "none",
-		borderRadius: "5px",
-
-		display: "flex",
-		alignItems: "center",
-		justifyContent: "center",
-		cursor: "pointer",
-	};
-	const favoriteButtonStyle: CSSProperties = {
-		...copyButtonStyle,
-		top: "5px",
-		left: "5px",
-	};
-	delete favoriteButtonStyle.right;
-
 	return (
-		<figure
-			key={color.name}
-			style={{
-				margin: 0,
-				textAlign: "center",
-				width: "100%",
-				position: "relative",
-				border: "1px solid hsl(0, 0%, 80%)",
-				borderRadius: "10px",
-				overflow: "hidden",
-			}}
-		>
+		<figure key={color.name} className="color-card">
 			<div
 				id="color-item"
-				style={{
-					width: "100%",
-					paddingBottom: "100%",
-					backgroundColor: color.name,
-					position: "relative",
-				}}
+				className="color-item"
+				style={{ backgroundColor: color.name }}
 			>
 				<button
 					onClick={() => toggleFavorite(color.name)}
-					style={favoriteButtonStyle}
+					className="favorite-button"
+					style={{ background: buttonBgColor }}
 				>
 					{isFavorite ? (
 						<LucideHeartCrack
-							style={{
-								width: "18px",
-								height: "18px",
-								color: iconColor,
-							}}
+							className={`icons ${isDark ? "icon-is-dark" : "icon-is-light"}`}
 						/>
 					) : (
 						<LucideHeart
-							style={{
-								width: "18px",
-								height: "18px",
-								color: iconColor,
-							}}
+							className={`icons ${isDark ? "icon-is-dark" : "icon-is-light"}`}
 						/>
 					)}
 				</button>
 				<button
 					onClick={() => copyToClipboard(color.name)}
-					style={copyButtonStyle}
+					className="copy-button"
+					style={{ background: buttonBgColor }}
 				>
 					<LucideCopy
-						style={{
-							width: "18px",
-							height: "18px",
-							color: iconColor,
-						}}
+						className={`icons ${isDark ? "icon-is-dark" : "icon-is-light"}`}
 					/>
 				</button>
 			</div>
-			<figcaption
-				style={{
-					padding: "5px",
-					backgroundColor: "hsla(0, 0%, 100%, 0.8)",
-					color: "hsl(0, 0%, 20%)",
-				}}
-			>
-				{color.name}
-			</figcaption>
+			<figcaption className="figcaption">{color.name}</figcaption>
 		</figure>
 	);
 };
@@ -170,15 +116,9 @@ const ColorList = () => {
 
 	return (
 		<div style={{ position: "relative" }}>
-			<div id="color-list" style={{ display: "grid", gap: "20px" }}>
+			<div id="color-list" className="color-list">
 				{favoriteColors.length !== 0 && <h2>Favorites</h2>}
-				<div
-					style={{
-						display: "grid",
-						gridTemplateColumns: "repeat(auto-fill, minmax(150px, 1fr))",
-						gap: "10px",
-					}}
-				>
+				<div className="color-items-container">
 					{favoriteColors.map((color) => {
 						return (
 							<ColorCard
@@ -196,20 +136,10 @@ const ColorList = () => {
 					placeholder="Filter colors..."
 					value={filter}
 					onChange={(e) => setFilter(e.target.value)}
-					style={{
-						padding: "10px",
-						boxSizing: "border-box",
-					}}
+					className="filter-input"
 				/>
 				<h2>All Colors</h2>
-				<div
-					id="color-items-container"
-					style={{
-						display: "grid",
-						gridTemplateColumns: "repeat(auto-fill, minmax(150px, 1fr))",
-						gap: "10px",
-					}}
-				>
+				<div id="color-items-container" className="color-items-container">
 					{filteredColors.map((color) => {
 						return (
 							<ColorCard
@@ -224,21 +154,7 @@ const ColorList = () => {
 				</div>
 			</div>
 			{copiedColor && (
-				<div
-					style={{
-						position: "fixed",
-						bottom: "20px",
-						left: "50%",
-						transform: "translateX(-50%)",
-						backgroundColor: "hsla(0, 0%, 0%, 0.7)",
-						color: "hsl(0, 0%, 100%)",
-						padding: "10px 20px",
-						borderRadius: "5px",
-						zIndex: 1000,
-					}}
-				>
-					Copied: {copiedColor}
-				</div>
+				<div className="copied-notification">Copied: {copiedColor}</div>
 			)}
 		</div>
 	);
