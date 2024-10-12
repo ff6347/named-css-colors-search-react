@@ -137,6 +137,37 @@ textarea {
 	font-size: 1rem;
 }
 
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+	border-radius: 0;
+	border: 1px solid hsl(0, 0%, 80%);
+}
+
+.icons {
+	cursor: pointer;
+	width: 18px;
+	height: 18px;
+}
+
+.icon-is-dark {
+	color: hsl(0, 0%, 70%);
+}
+
+.icon-is-light {
+	color: hsl(0, 0%, 30%);
+}
+
+.icons:hover {
+	opacity: 0.8;
+}
+
+.icons:active {
+	opacity: 0.6;
+}
+
 @media (prefers-color-scheme: light) {
 	:root {
 		color: #213547;
