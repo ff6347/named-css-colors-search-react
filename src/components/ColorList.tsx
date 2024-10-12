@@ -24,6 +24,7 @@ const ColorCard = ({
 		? `hsla(${h}, ${s}%, ${l + 10}%, 0.3)`
 		: `hsla(${h}, ${s}%, ${l - 10}%, 0.3)`;
 
+
 	return (
 		<figure key={color.name} className="color-card">
 			<div
