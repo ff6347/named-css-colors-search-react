@@ -25,8 +25,8 @@
 	"devDependencies": {
 		"@eslint/js": "9.16.0",
 		"@technologiestiftung/semantic-release-config": "1.2.4",
-		"eslint": "8.57.1",
-		"eslint-plugin-react-hooks": "4.6.2",
+		"eslint": "9.16.0",
+		"eslint-plugin-react-hooks": "5.1.0",
 		"eslint-plugin-react-refresh": "0.4.16",
 		"globals": "15.13.0",
 		"prettier": "3.4.1",
