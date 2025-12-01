@@ -1,3 +1,10 @@
+## [1.4.2](https://github.com/ff6347/named-css-colors-search-react/compare/v1.4.1...v1.4.2) (2025-12-01)
+
+
+### Bug Fixes
+
+* **deps:** update astro monorepo ([2148106](https://github.com/ff6347/named-css-colors-search-react/commit/2148106e5991277395d054ea21633905b679f97c))
+
 ## [1.4.1](https://github.com/ff6347/named-css-colors-search-react/compare/v1.4.0...v1.4.1) (2024-10-07)
 
 
