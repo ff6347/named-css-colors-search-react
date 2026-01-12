@@ -27,7 +27,7 @@
 		"@technologiestiftung/semantic-release-config": "1.2.4",
 		"eslint": "8.57.1",
 		"eslint-plugin-react-hooks": "4.6.2",
-		"eslint-plugin-react-refresh": "0.4.24",
+		"eslint-plugin-react-refresh": "0.4.26",
 		"globals": "15.15.0",
 		"prettier": "3.7.4",
 		"semantic-release": "24.2.9"
